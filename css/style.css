@@ -1,0 +1,149 @@
+:root {
+	--cor-primaria: #DEDEDE;
+	--cor-secundaria: #141414;
+	--cor-terciaria: #EE780C;
+	--cor-hover: #F6B274;
+
+	--fonte-primaria: 'Krona One', sans-serif;
+	--fonte-secundaria: Montserrat, sans-serif;
+}
+
+body {
+	background-color: var(--cor-primaria);
+	color: var(--cor-secundaria);
+	min-height: 100vh;
+	position: relative;
+}
+
+.cabecalho {
+	padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu {
+	display: flex;
+	gap: 80px;
+}
+
+.cabecalho__menu__link {
+	font-family: var(--fonte-secundaria);
+	font-size: 1.5rem;
+	color: var(--cor-terciaria);
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.cabecalho__menu__link:hover {
+	color: var(--cor-hover);
+	transition: 0.5s;
+}
+
+.apresentacao {
+	padding: 5% 15%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 82px;
+}
+
+.apresentacao__conteudo {
+	width: 50%; 
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	padding-bottom: 80px; /* Altura do rodapé para ele ficar na parte de baixo */
+}
+
+.apresentacao__conteudo__titulo {
+	font-family: var(--fonte-primaria);
+	font-size: 2.25rem; 
+}
+
+.titulo-destaque {
+	color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo__texto {
+	font-family: var(--fonte-secundaria);
+	font-size: 1.5rem;
+}
+
+.apresentacao__links {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 32px;
+}
+
+.apresentacao__links__subtitulo {
+	font-family: var(--fonte-primaria);
+	font-weight: 400;
+	font-size: 1.5rem;
+}
+
+.apresentacao__links__navegacao {
+	display: flex;
+	justify-content: center;
+	gap: 16px;
+	width: 378px;
+	text-align: center;
+	border: 2px solid var(--cor-terciaria);
+	border-radius: 0.5rem;
+	font-size: 1.5rem;
+	padding: 1rem;
+	text-decoration: none;
+	color: var(--cor-secundaria);
+	font-family: var(--fonte-secundaria);
+	font-weight: 600;
+}
+
+.apresentacao__links__navegacao:hover {
+	background-color: var(--cor-hover);
+	transition: 0.5s;
+}
+
+.apresentacao__imagem {
+	width: 40%;
+	margin-bottom: 240px;
+}
+
+.rodape {
+	background-color: var(--cor-terciaria);
+	position: absolute;
+	height: 5rem;
+	width: 100%;
+	bottom: 0;
+	padding: 1.5rem;
+	font-family: Montserrat, sarif;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+@media (max-width: 1200px) {
+	.cabecalho {
+		padding: 10% 0% 0% 0%;
+	}
+
+	.cabecalho__menu {
+		justify-content: center;
+		gap: 40px;
+	}
+
+	.apresentacao {
+		flex-direction: column-reverse;
+		align-items: center;
+		padding: 5%;
+	}
+
+	.apresentacao__conteudo {
+		width: auto;
+	}
+
+	.apresentacao__imagem {
+		margin-bottom: 0;
+	}
+
+	.rodape {
+		position: relative;
+	}
+}
