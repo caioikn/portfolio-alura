@@ -14,6 +14,7 @@ Esse portfólio foi criado durante o curso de introdução ao HTML e CSS da Alur
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
 ## 🔗 Links
+- [Deploy](https://caioikn.github.io/portfolio-alura/)
 - [Baixar arquivos](https://github.com/caioikn/typemaster/portfolio-alura/main/portfolio-alura.zip)
 
 ## 🧑🏻‍💻 Autor
